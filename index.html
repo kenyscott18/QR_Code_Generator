@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>QR Code Generator</title>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="qr-area">
+
+      <h1 class="title-text">QR Code Generator</h1>
+
+      <p class="under-title">
+        Create QR codes instantly
+      </p>
+
+      <input
+        type="text"
+        id="user-input"
+        class="text-input"
+        placeholder="Enter text or URL"
+      >
+
+      <button id="generate-button" class="generate-button">
+        Generate QR Code
+      </button>
+
+    
+
+      <p id="response" class="response"></p>
+
+
+      <div id="qr-box" class="qr-box">
+        <div id="qr-code"></div>
+      </div>
+    
+     
+
+    </div>
+
+  </div>
+
+   <button id="clear-button" class="clear-button">Reset</button>
+
+  <footer class="footer">QR Code Generator By Ken</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
