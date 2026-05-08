@@ -1,5 +1,5 @@
 const generateBtn = document.getElementById("generate-button");
-const qrWrapper = document.getElementById("qr-box");
+const qrSpace = document.getElementById("qr-box");
 const qrCode = document.getElementById("qr-code");
 const statusMsg = document.getElementById("response");
 const clearButton = document.getElementById("clear-button");
@@ -21,7 +21,7 @@ generateBtn.addEventListener("click", () => {
     height: 220
   });
 
-  qrWrapper.classList.add("show");
+  qrSpace.classList.add("show");
 
   statusMsg.textContent = "QR code generated successfully!";
   statusMsg.classList.add("show");
@@ -33,5 +33,6 @@ document.getElementById("user-input").addEventListener("input", () => {
 });
 
 clearButton.addEventListener("click", () => {
-  window.location.href = "./index.html";
+window.location.href = "./index.html"; 
 });
+
